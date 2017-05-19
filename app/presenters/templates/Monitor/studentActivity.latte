@@ -1,0 +1,31 @@
+{block content}
+<div class="table">
+{foreach $student as $s}
+  <p>All activity records for student: {$s->username} </p>
+{/foreach}
+  <table>
+    <tr>
+      <th>Activity ID</th>
+      <th>Activity</th>
+      <th>Satisfaction</th>
+      <th>Difficulty</th>
+      <th>Time spent</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th>Notes</th>
+    </tr>
+    {foreach $activity as $a}
+    <tr>
+      <td>{$a->activityId}</td>
+      <td>{$a->activity}</td>
+      <td>{$a->satisfaction}</td>
+      <td>{$a->difficulty}</td>
+      <td>{$a->timeSpent}</td>
+      <td>{$a->startDate|date:'j F Y'}</td>
+      <td>{$a->endDate|date:'j F Y'}</td>
+      <td>{$a->notes}</td>
+    </tr>
+  {/foreach}
+  </table>
+</div>
+{/block content}

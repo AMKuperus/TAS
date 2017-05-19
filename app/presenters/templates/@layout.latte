@@ -1,0 +1,55 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>{ifset title}{include title|stripHtml} | {/ifset}TAS by ITVitae</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{$basePath}/css/style.css">
+	{block head}{/block}
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <li><a n:href="Homepage:">Homepage</a></li>
+      {if $user->loggedIn}
+        <li class="rightside"><a n:href="Sign:out">Sign out</a></li>
+        <li class="rightside"><a id="inactive">Welcome {$user->getIdentity()->username}</a></li>
+        {if $user->isInRole('STUDENT')}
+          <li><a n:href="Student:">My Activity</a></li>
+          <li><a n:href="Student:addActivity">Add Activity</a></li>
+        {elseif $user->isInRole('MONITOR')}
+          <li><a n:href="Monitor:">Monitor</a></li>
+          <li><a n:href="Monitor:allActivity">All activity</a></li>
+          <li><a n:href="Monitor:allStudents">All students</a></li>
+          <li><a n:href="Monitor:changeRole">Add Students</a></li>
+          <li><a n:href="Monitor:addGroup">Add group</a></li>
+        {elseif $user->isInRole('ADMIN')}
+          <li><a n:href="Admin:">All users</a></li>
+          <li><a n:href="Admin:user">Users</a></li>
+          <li><a n:href="Admin:student">Students</a></li>
+          <li><a n:href="Admin:monitor">Monitors</a></li>
+          <li><a n:href="Admin:admin">Administrators</a></li>
+        {/if}
+      {else}
+        <li class="rightside"><a n:href="Sign:in">Sign in</a></li>
+      {/if}
+    </ul>
+  </div>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	{include content}
+
+	{block scripts}
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+	<script src="{$basePath}/js/main.js"></script>
+	{/block}
+</body>
+</html>

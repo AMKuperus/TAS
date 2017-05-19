@@ -1,0 +1,22 @@
+{block content}
+<div class="table">
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Group</th>
+      <th>Role</th>
+      <th>Email</th>
+     </tr>
+    {foreach $users as $u}
+      <tr>
+        <td>{$u->userId}</td>
+        <td><a n:href="Monitor:studentActivity $u->userId">{$u->username}</a></td>
+        <td>{$u->group}</td>
+        <td>{$u->role}</td>
+        <td>{$u->email}</td>
+      </tr>
+    {/foreach}
+  </table>
+</div>
+</block content}

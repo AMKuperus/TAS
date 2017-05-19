@@ -1,0 +1,32 @@
+{block content}
+<div class="table">
+  <table>
+    <tr>
+      <th>Activity ID</th>
+      <th>Activity</th>
+      <th>Satisfaction</th>
+      <th>Difficulty</th>
+      <th>Time spent</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th>Notes</th>
+      <th></th><!--empty cell for edit row-->
+      <th></th><!--empty cell for finish row-->
+    </tr>
+    {foreach $activity as $a}
+    <tr>
+      <td>{$a->activityId}</td>
+      <td>{$a->activity}</td>
+      <td>{$a->satisfaction}</td>
+      <td>{$a->difficulty}</td>
+      <td>{$a->timeSpent}</td>
+      <td>{$a->startDate|date:'j F Y'}</td>
+      <td>{$a->endDate|date:'j F Y'}</td>
+      <td>{$a->notes}</td>
+      <td>{if $a->endDate == NULL}<a n:href="editActivity $a->activityId">Edit</a>{/if}</td>
+      <td>{if $a->endDate == NULL}<a n:href="finishActivity $a->activityId">Finish</a>{/if}</td>
+    </tr>
+  {/foreach}
+  </table>
+</div>
+{/block content}

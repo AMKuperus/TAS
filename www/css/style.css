@@ -1,0 +1,186 @@
+#ajax-spinner {
+	margin: 15px 0 0 15px;
+	padding: 13px;
+	background: white url('../images/spinner.gif') no-repeat 50% 50%;
+	font-size: 0;
+	z-index: 123456;
+	display: none;
+}
+
+div.flash {
+	color: black;
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+a[href^="#error:"] {
+	background: red;
+	color: white;
+}
+
+form th, form td {
+	font-weight: normal;
+}
+
+form th {
+	text-align: right;
+}
+
+form .required label {
+	font-weight: bold;
+}
+
+form .error {
+	color: #D00;
+	font-family: sans-serif;
+	font-size: 0.9em;
+	text-align: center;
+	list-style-type: none;
+	margin-left: -22%;
+}
+
+/*by AMK*/
+
+body {
+  background-image: url("images/logo_white_transp.png");
+  background-color: #E0E1E6;
+	margin: 0;
+}
+
+/*Typography*/
+h1, h2, small {
+  font-family: sans-serif;
+  text-align: center;
+  color: rgba(1,167,189,1.00);
+}
+
+p, a, th, td {
+  font-family: sans-serif;
+  font-size: 0.8em;
+	color: #3F3F3F;
+}
+
+small {
+  font-size: 0.7em;
+}
+
+a {
+  color: rgba(1,167,189,1.00);
+}
+
+a:hover {
+  color: rgba(2, 133, 150,1.00);
+  text-shadow: 0.02em 0.02em 0.02em #5A585E;
+}
+
+.error {
+  color: tomato;
+}
+/*Form Layout*/
+form .button{
+	margin-top: 0.5vw;
+}
+
+/*Table class for showing data*/
+.table {
+	padding: 1vw;
+	text-align: center;
+}
+
+.table table {
+	border: none;
+	border-collapse: collapse;
+	width: 98vw;
+}
+
+.table th, td {
+	font-family: sans-serif;
+	font-size: 0.9em;
+	padding: 0.5em;
+}
+
+.table tr:nth-child(odd) {
+	background-color: #F6F6F6;
+}
+
+.table tr:hover {
+	background-color: #ACACAC;
+}
+
+.table th {
+	background-color: #ACACAC;
+}
+
+/*Boxes for Layout | 	Use: first add [box] and then the desired box in class
+											Example class="box loginbox"														*/
+.box {
+  position: absolute;
+  background-color: #FFF;
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #5A585E;
+}
+
+.loginbox {
+  top: 10vw;
+  left: 35%;
+  width: 15em;
+}
+
+.registerbox {
+  top: 10vw;
+  left: 35%;
+  width: 20em;
+}
+
+.uibox {
+  top: 1vw;
+  left: 1vw;
+  right: 1vw;
+  width: auto;
+  height: 85%;
+}
+
+/*Navigation*/
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3F3F3F;
+}
+
+.nav li {
+	display: inline;
+	float: left;
+}
+
+.nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 1.0vw;
+	text-decoration: none;
+}
+
+.nav p {
+	color: white;
+	display: inline;
+	padding: 1vw;
+}
+
+.nav li a:hover {
+	background-color: rgba(1,167,189,1.00);
+	color: #3F3F3F;
+}
+
+.nav .rightside {
+	float: right;
+}
+
+#inactive {
+	background-color: #3F3F3F;
+	color: white;
+}

@@ -1,0 +1,29 @@
+{block content}
+<div class="table">
+  <table>
+  <tr>
+    <th>User ID</th>
+    <th>Username</th>
+    <th>Activity Id</th>
+    <th>Activity</th>
+    <th>Startdate</th>
+    <th>Enddate</th>
+    <th>Time spent</th>
+    <th>Difficulty</th>
+    <th>Satisfaction</th>
+  </tr>
+  {foreach $activity as $a}
+  <tr>
+    <td>{$a->userid}</td>
+    <td><a n:href="Monitor:studentActivity $a->userId">{$a->ref('users', userId)->username}</a></td>
+    <td>{$a->activityId}</td>
+    <td>{$a->activity}</td>
+    <td>{$a->startDate}</td>
+    <td>{$a->endDate}</td>
+    <td>{$a->timeSpent}</td>
+    <td>{$a->difficulty}</td>
+    <td>{$a->satisfaction}</td>
+  </tr>
+  {/foreach}
+  </table>
+</div>

@@ -1,0 +1,9 @@
+{block content}
+<p>Groups in database:</p>
+<ul>
+{foreach $groups as $group}
+  <li><a n:href="Monitor:perGroup $group->group">{$group->group}</a></li>
+{/foreach}
+</ul>
+<p>If group is not in list add the group by filling in the field below and click add group.</p>
+{control addGroupForm}
