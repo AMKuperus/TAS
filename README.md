@@ -39,7 +39,7 @@ In the folder TAS/DBDATA you will find a file called tas.sql. Open this file and
 It will automatic add a database and fill it with te correct tables and settings. It will also automaticly create 3 basic-users for testing.
 
 || Username: student Password: 1234567 || Username: monitor Password: 1234567 || Username: admin Password: 1234567 ||
-___When taking TAS System in official use remove these test-users!___
+_When taking TAS System in official use remove these test-users!_
 
 ### Step 4 Configure TAS
 In the folder app/config/ you will find a file called config.local.neon.sample
