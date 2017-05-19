@@ -1,8 +1,23 @@
 # TAS
 TAS: Student Activity Tracker based on Nette Framework.
 
+# Features
+Seperate user-roles with their own seperate functionality
+- a user is a registered person who still needs approval by a monitor/admin.
+- a student is a person who is a student belonging to a group and who can make/edit/finish their activity's.
+- a monitor can view all users and students and assign roles to users making them students. 
+- a monitor can add groups to the system and apply a group to a student.
+- a monitor can view all groups and all students per group.
+- a administrator can see all registered users by all/users/students/monitors/administrators.
+- a administrator has the power to alter roles for all roles.
+
 ## Version
 Current version is V0.5 Beta stable.
+
+### TODO/Still to come
+- Improved registration method
+- Improved login method
+- Search-function for monitor
 
 ## Installation setup
 In a 4-step setup you can configure youre own TAS: Student Activity Tracker.
