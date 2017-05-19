@@ -11,17 +11,27 @@ Get the content off this repository and save it on your harddrive in youre local
 ### Step 2 Install Nette/sandbox
 Run composer update on the folder where you left this repository.
 To do this run a terminal (unix/mac) or hit windowslogo and type cmd in search (win(7?))
-Then in the termninal go in the TAS directory. Once in the TAS-dir type composer.phar update or composer update.
+
+Then in the terminal go to the TAS directory.
+Once in the TAS-dir type composer.phar update or composer update.
 Composer should now update the directory to contain Nette/sandbox.
 ### Step 3 Add the database
-In the folder TAS/DBDATA you will find a file calles tas.sql. Open this file and copy-paste the entire content to youre phpmyadmin-SQL-window.
-It will automaticly add a database and fill it with te correct tables and settings. It will also automaticly create 3 basic-users for testing.
+In the folder TAS/DBDATA you will find a file called tas.sql. Open this file and copy-paste the entire content to youre phpmyadmin-SQL-window.
+It will automatic add a database and fill it with te correct tables and settings. It will also automaticly create 3 basic-users for testing.
 
 || Username: student Password: 1234567 || Username: monitor Password: 1234567 || Username: admin Password: 1234567 ||
 ### Step 4 Configure TAS
 In the folder app/config/ you will find a file called config.local.neon.sample
 Follow the instructions from the file and the system is good to go.
 ->There can be a problem with the dns-line of the file rejecting ''. If this occurs try replacing the '' with this '
+
+### Trouble installing?
+Scroll further and read more about Nette and Installation. The installation explained there is a fresh installation.
+
+Follow those steps and then once installed you can add the content of this repository and continue with step 3 and 4 of this manual.
+
+If you still can't make it work try to read more about installing Nette on the [Nette-website](https://nette.org).
+
 
 ## About
 TAS is developed by [AMKuperus](https://github.com/AMKuperus) and [Guido Leijten](https://github.com/guidoleijten) as a project for [ITVitae](http://itvitae.nl/).
