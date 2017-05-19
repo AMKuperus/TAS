@@ -17,7 +17,7 @@ Composer should now update the directory to contain Nette/sandbox.
 In the folder TAS/DBDATA you will find a file calles tas.sql. Open this file and copy-paste the entire content to youre phpmyadmin-SQL-window.
 It will automaticly add a database and fill it with te correct tables and settings. It will also automaticly create 3 basic-users for testing.
 
-Username: student Password: 1234567 Username: monitor Password: 1234567 Username: admin Password: 1234567
+|| Username: student Password: 1234567 || Username: monitor Password: 1234567 || Username: admin Password: 1234567 ||
 ### Step 4 Configure TAS
 In the folder app/config/ you will find a file called config.local.neon.sample
 Follow the instructions from the file and the system is good to go.
