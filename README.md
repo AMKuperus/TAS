@@ -22,6 +22,8 @@ Current version is V0.5 Beta stable.
 - Improved registration method
 - Improved login method
 - Search-function for monitor
+- Improve css
+- Improve content
 
 ## Installation setup
 In a 4-step setup you can configure youre own TAS: Student Activity Tracker.
