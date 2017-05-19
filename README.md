@@ -1,14 +1,14 @@
 # TAS
 TAS: Student Activity Tracker based on Nette Framework.
 
-#Version
+##Version
 Current version is V0.5 Beta stable.
 
-#Installation setup
+##Installation setup
 In the folder app/config/ you will find a file called config.local.neon.smaple
 Follow the instructions from the file and the system is good to go.
 
-#About
+##About
 TAS is developed by [AMKuperus](https://github.com/AMKuperus) and [Guido Leijten](https://github.com/guidoleijten) as a project for [ITVitae](http://itvitae.nl/).
 
 Nette Sandbox
