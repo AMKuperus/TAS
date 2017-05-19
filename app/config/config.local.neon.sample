@@ -1,12 +1,12 @@
-//To make the TAS program work fill in the following fields:
-//dbname= <<fill in the database name after the = and close with a '
-//(important, sometimes in conversion this gets replaced by different sign and make it unable to create a database connection)
-//user: <<fill in the username for the database
-//password: <<fill in the password
-//options: can be left alone, or used if needed. For further reference look at the Nette-documentation.
-//For user and password just fill in the details, no things like '' or brackets needed.
-//Save this file as config.local.neon in the config-folder of this Nette-installation.
-//The Nette installation of TAS should now work as intended.
+#To make the TAS program work fill in the following fields:
+#dbname= <<fill in the database name after the = and close with a '
+#(important, sometimes in conversion this gets replaced by different sign and make it unable to create a database connection)
+#user: <<fill in the username for the database
+#password: <<fill in the password
+#options: can be left alone, or used if needed. For further reference look at the Nette-documentation.
+#For user and password just fill in the details, no things like '' or brackets needed.
+#Save this file as config.local.neon in the config-folder of this Nette-installation.
+#The Nette installation of TAS should now work as intended.
 parameters:
 
 

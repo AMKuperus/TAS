@@ -75,7 +75,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`userId`, `username`, `password`, `email`, `firstname`, `lastname`, `role`, `group`) VALUES
 (1, 'student', '$2y$10$Y9s2g/.9XFzY4qL29pEH6eM8YdHOXbmmeO4tLYbR/gytfCmgxy4cq', 'example@example.com', '', '', 'STUDENT', ''),
 (2, 'monitor', '$2y$10$Vjg4vnElXuQ6AiQ4aqPHie0YljFwxCCFHArMlarBHPB54pY/jvcIG', 'example@example.com', '', '', 'MONITOR', ''),
-(3, 'admin', '$2y$10$59ai0n/9o5yMhSBW6Cs9f.Nq7Nxqz2knuSTbAeS2onWbSur5pUT.q', 'example@example.com', '', '', 'ADMIN', ''),
+(3, 'admin', '$2y$10$59ai0n/9o5yMhSBW6Cs9f.Nq7Nxqz2knuSTbAeS2onWbSur5pUT.q', 'example@example.com', '', '', 'ADMIN', '');
 
 --
 -- Indexes for dumped tables
