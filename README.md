@@ -11,6 +11,10 @@ Seperate user-roles with their own seperate functionality
 - a administrator can see all registered users by all/users/students/monitors/administrators.
 - a administrator has the power to alter roles for all roles.
 
+Making it easy to follow your students activity
+- students can easily add or edit activity's to TAS
+- monitor can easily see all activity's or activity sorted by group
+
 ## Version
 Current version is V0.5 Beta stable.
 
@@ -50,6 +54,8 @@ If you still can't make it work try to read more about installing Nette on the [
 
 ## About
 TAS is developed by [AMKuperus](https://github.com/AMKuperus) and [Guido Leijten](https://github.com/guidoleijten) as a project for [ITVitae](http://itvitae.nl/).
+
+=============
 
 Nette Sandbox
 =============
