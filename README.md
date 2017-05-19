@@ -2,6 +2,14 @@
 TAS: Student Activity Tracker based on Nette Framework.
 
 # Features
+Making it easy to follow your students activity.
+- students can easily add or edit activity's to TAS.
+- monitor can easily see all activity's or activity sorted by group.
+
+Safe environment
+- Automatic logout after 30 minutes of inactivity.
+- Roles seperate abilities.
+
 Seperate user-roles with their own seperate functionality
 - a user is a registered person who still needs approval by a monitor/admin.
 - a student is a person who is a student belonging to a group and who can make/edit/finish their activity's.
@@ -10,10 +18,6 @@ Seperate user-roles with their own seperate functionality
 - a monitor can view all groups and all students per group.
 - a administrator can see all registered users by all/users/students/monitors/administrators.
 - a administrator has the power to alter roles for all roles.
-
-Making it easy to follow your students activity
-- students can easily add or edit activity's to TAS
-- monitor can easily see all activity's or activity sorted by group
 
 ## Version
 Current version is V0.5 Beta stable.
