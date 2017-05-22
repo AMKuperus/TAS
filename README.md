@@ -57,7 +57,8 @@ Follow the instructions from the file and the system is good to go.
 In the TAS-directory create  2 new folders with the following names:
 - log
 - temp
-Now your installation should be good to go.
+
+__Now your installation should be good to go.__
 
 ### Trouble installing?
 Scroll further and read more about Nette and Installation. The installation explained there is a fresh installation.
