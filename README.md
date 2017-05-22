@@ -13,7 +13,7 @@ Safe environment
 Seperate user-roles with their own seperate functionality
 - a user is a registered person who still needs approval by a monitor/admin.
 - a student is a person who is a student belonging to a group and who can make/edit/finish their activity's.
-- a monitor can view all users and students and assign roles to users making them students. 
+- a monitor can view all users and students and assign roles to users making them students.
 - a monitor can add groups to the system and apply a group to a student.
 - a monitor can view all groups and all students per group.
 - a administrator can see all registered users by all/users/students/monitors/administrators.
@@ -30,9 +30,9 @@ Current version is V0.5 Beta stable.
 - Improve content
 
 ## Installation setup
-In a 4-step setup you can configure youre own TAS: Student Activity Tracker.
+In a 5-step setup you can configure youre own TAS: Student Activity Tracker.
 ### Step 1 Get this repository
-Get the content off this repository and save it on your harddrive in youre local-server environment, like htdocs-folder.
+Get the content off this repository and save it on your hard drive in your local-server environment, like htdocs-folder.
 ### Step 2 Install Nette/sandbox
 Run composer update on the folder where you left this repository.
 To do this run a terminal (unix/mac) or hit windowslogo and type cmd in search (win(7?))
@@ -42,7 +42,7 @@ Once in the TAS-dir type composer.phar update or composer update.
 Composer should now update the directory to contain Nette/sandbox.
 ### Step 3 Add the database
 In the folder TAS/DBDATA you will find a file called tas.sql. Open this file and copy-paste the entire content to youre phpmyadmin-SQL-window.
-It will automatic add a database and fill it with te correct tables and settings. It will also automaticly create 3 basic-users for testing.
+It will automatic add a database and fill it with the correct tables and settings. It will also automatically create 3 basic-users for testing.
 
 || Username: student Password: 1234567 || Username: monitor Password: 1234567 || Username: admin Password: 1234567 ||
 _When taking TAS System in official use remove these test-users!_
@@ -51,6 +51,13 @@ _When taking TAS System in official use remove these test-users!_
 In the folder app/config/ you will find a file called config.local.neon.sample
 Follow the instructions from the file and the system is good to go.
 ->There can be a problem with the dns-line of the file rejecting ''. If this occurs try replacing the '' with this '
+(the error occuring is SQLSTATE[HY000] Access denied)
+
+### Step 5 Create missing folder
+In the TAS-directory create  2 new folders with the following names:
+- log
+- temp
+Now your installation should be good to go.
 
 ### Trouble installing?
 Scroll further and read more about Nette and Installation. The installation explained there is a fresh installation.
