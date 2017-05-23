@@ -4,7 +4,7 @@
   <tr>
     <th>User ID</th>
     <th>Username</th>
-    <th>Activity Id</th>
+    <th>Group</th>
     <th>Activity</th>
     <th>Startdate</th>
     <th>Enddate</th>
@@ -16,7 +16,7 @@
   <tr>
     <td>{$a->userid}</td>
     <td><a n:href="Monitor:studentActivity $a->userId">{$a->ref('users', userId)->username}</a></td>
-    <td>{$a->activityId}</td>
+    <td>{$a->ref('users', userId)->group}</td>
     <td>{$a->activity}</td>
     <td>{$a->startDate}</td>
     <td>{$a->endDate}</td>
