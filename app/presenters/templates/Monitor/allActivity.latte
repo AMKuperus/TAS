@@ -18,8 +18,8 @@
     <td><a n:href="Monitor:studentActivity $a->userId">{$a->ref('users', userId)->username}</a></td>
     <td>{$a->ref('users', userId)->group}</td>
     <td>{$a->activity}</td>
-    <td>{$a->startDate}</td>
-    <td>{$a->endDate}</td>
+    <td>{$a->startDate|date:'j F Y'}</td>
+    <td>{$a->endDate|date:'j F Y'}</td>
     <td>{$a->timeSpent}</td>
     <td>{$a->difficulty}</td>
     <td>{$a->satisfaction}</td>
