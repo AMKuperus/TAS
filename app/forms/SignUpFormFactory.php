@@ -44,9 +44,9 @@ class SignUpFormFactory
 			->setRequired('Please create a password.')
 			->addRule($form::MIN_LENGTH, NULL, self::PASSWORD_MIN_LENGTH);
 
-		//$form->addText('firstName', 'First name:')->setRequired('Please type your first name');
-		//$form->addText('lastNamePrefix', 'Prefix lastname');
-		//$form->addText('lastName', 'Last name:')->setRequired('Please type your last name');
+		$form->addText('firstname', 'First name:')->setRequired('Please type your first name');
+		//$form->addText('lastnamePrefix', 'Prefix lastname');
+		$form->addText('lastname', 'Last name:')->setRequired('Please type your last name');
 
 		$form->addSubmit('send', 'Sign up');
 
@@ -54,7 +54,9 @@ class SignUpFormFactory
 			try {
 				$this->userManager->add($values->username,
 																$values->email,
-																$values->password);
+																$values->password,
+																$values->firstname,
+																$values->lastname);
 			} catch (Model\DuplicateNameException $e) {
 				$form['username']->addError('Username is already taken.');
 				return;
