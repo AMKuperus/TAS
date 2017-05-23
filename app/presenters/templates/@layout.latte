@@ -20,7 +20,9 @@
       <li><a n:href="Homepage:">Homepage</a></li>
       {if $user->loggedIn}
         <li class="rightside"><a n:href="Sign:out">Sign out</a></li>
-        <li class="rightside"><a id="inactive">Welcome {$user->getIdentity()->username}</a></li>
+        <li class="rightside"><a id="inactive">Welcome {$user->getIdentity()->username}
+            {if $user->getIdentity()->role == "STUDENT"} | Group: {$user->getIdentity()->group}{/if}</a>
+        </li>
         {if $user->isInRole('STUDENT')}
           <li><a n:href="Student:">My Activity</a></li>
           <li><a n:href="Student:addActivity">Add Activity</a></li>
