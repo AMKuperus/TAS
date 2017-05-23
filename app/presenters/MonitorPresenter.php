@@ -72,7 +72,7 @@ class MonitorPresenter extends BasePresenter {
     $update = $this->database->table('group');
     $update->insert($values);
     $this->flashMessage('Added group.');
-    $this->redirect('Monitor:');
+    $this->redirect('Monitor:addGroup');
   }
 
   public function createComponentAssignGroupForm() {
