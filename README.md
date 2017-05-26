@@ -19,12 +19,18 @@ Seperate user-roles with their own seperate functionality
 - a administrator can see all registered users by all/users/students/monitors/administrators.
 - a administrator has the power to alter roles for all roles.
 
+To come: Functional registration process that keeps out unwanted users.
+- Registration requires email-validation after which accounts need to be activated by monitor by changing role's from user to student.
+- Accounts that did not validate their email will not be able to be granted access.
+
 ## Version
-Current version is V0.5 Beta stable.
+Current version is V0.6 Beta stable.
 
 ### TODO/Still to come
-- Improved registration method
-- Improved login method
+- Improved registration method <in development>
+- Improved login method <in development>
+- Add email-verification to the process of registration <in development>
+- Add a forget password function
 - Search-function for monitor
 - Improve css
 - Improve content
