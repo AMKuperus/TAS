@@ -66,7 +66,7 @@ CREATE TABLE `users` (
   `lastname` varchar(255) DEFAULT NULL,
   `role` varchar(255) NOT NULL,
   `group` varchar(15) DEFAULT NULL,
-  `token` varchar(40) NOT NULL
+  `token` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
