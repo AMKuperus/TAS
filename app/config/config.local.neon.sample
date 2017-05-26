@@ -11,8 +11,18 @@ parameters:
 
 
 database:
-	dsn: 'mysql:host=127.0.0.1;dbname='//databasename
-	user: //database username
-	password: //pasword
+	dsn: 'mysql:host=127.0.0.1;dbname=' #databasename
+	user: #database username
+	password: #pasword
 	options:
 	 lazy: yes
+
+mail:
+	smtp: true  #use SmtpMailer instead of SendmailMailer
+	#optional settings
+	host: #your host like mail.example.com
+	port: #port
+	username: #username
+	password: #password
+	secure: ssl #possible values are ssl, tls or null
+	#timeout: 30
