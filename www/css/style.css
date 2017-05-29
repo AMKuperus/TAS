@@ -50,7 +50,7 @@ body {
 }
 
 /*Typography*/
-h1, h2, small {
+h1, h2, h3, small {
   font-family: sans-serif;
   text-align: center;
   color: rgba(1,167,189,1.00);
@@ -75,12 +75,31 @@ a:hover {
   text-shadow: 0.02em 0.02em 0.02em #5A585E;
 }
 
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 .error {
   color: tomato;
 }
 /*Form Layout*/
 form .button{
 	margin-top: 0.5vw;
+}
+
+.f-q {
+	font-weight: bold;
+}
+
+.f-ans {
+	font-size: 0.8em;
+	padding-left: 1em;
+}
+
+.center {
+	text-align: center;
 }
 
 /*Table class for showing data*/
@@ -132,15 +151,28 @@ form .button{
 .registerbox {
   top: 10vw;
   left: 35%;
-  width: 20em;
+  #width: 20em;
 }
 
 .uibox {
-  top: 1vw;
-  left: 1vw;
-  right: 1vw;
-  width: auto;
-  height: 85%;
+  top: 5vw;
+  #left: 5vw;
+  right: 20vw;
+  width: 60%;
+  height: 75%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.uibox a, p {
+	font-size: 0.9em;
+}
+
+.aboutbox {
+	position: absolute;
+	bottom: 1.5vw;
+	right: -0.5vw;
+	width: 100%;
 }
 
 /*Navigation*/

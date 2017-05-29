@@ -11,6 +11,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
+  <link rel="stylesheet" href="{$basePath}/font-awesome470/css/font-awesome.min.css">
 	{block head}{/block}
 </head>
 
@@ -19,33 +20,38 @@
     <ul>
       <!--<li><a n:href="Homepage:">Homepage</a></li>-->
       {if $user->loggedIn}
-        <li class="rightside"><a n:href="Sign:out">Sign out</a></li>
+        <li class="rightside"><a n:href="Sign:out"><i class="fa fa-sign-out fa-lg"></i> Sign out</a></li>
         <li class="rightside"><a id="inactive">Welcome {$user->getIdentity()->username}
             {if $user->getIdentity()->role == "STUDENT"} | Group: {$user->getIdentity()->group}{/if}</a>
         </li>
         {if $user->isInRole('STUDENT')}
           <li><a n:href="Student:">My Activity</a></li>
           <li><a n:href="Student:addActivity">Add Activity</a></li>
+          <li><a n:href="Info:studentFaq">FAQ</a></li>
         {elseif $user->isInRole('MONITOR')}
-          <li><a n:href="Monitor:">Monitor</a></li>
+          <!--<li><a n:href="Monitor:">Monitor</a></li>-->
           <li><a n:href="Monitor:allActivity">All activity</a></li>
           <li><a n:href="Monitor:allStudents">All students</a></li>
           <li><a n:href="Monitor:changeRole">Add Students</a></li>
           <li><a n:href="Monitor:addGroup">Groups</a></li>
+          <li><a n:href="Info:monitorFaq">FAQ</a></li>
         {elseif $user->isInRole('ADMIN')}
           <li><a n:href="Admin:">All users</a></li>
           <li><a n:href="Admin:user">Users</a></li>
           <li><a n:href="Admin:student">Students</a></li>
           <li><a n:href="Admin:monitor">Monitors</a></li>
           <li><a n:href="Admin:admin">Administrators</a></li>
+        {elseif $user->isInRole('USER')}
+          <li><a n:href="Info:studentFaq">FAQ</a></li>
         {/if}
       {else}
-        <li class="rightside"><a n:href="Sign:in">Sign in</a></li>
+        <li class="rightside"><a n:href="Info:about"><i class="fa fa-info-circle fa-lg"></i></a></i>
+        <li class="rightside"><a n:href="Sign:in"><i class="fa fa-sign-in fa-lg"></i> Sign in</a></li>
       {/if}
     </ul>
   </div>
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
-
+  <!--<div class="aboutbox"><a n:href="Info:about"><i class="fa fa-info-circle fa-lg"></i></a></div>-->
 	{include content}
 
 	{block scripts}

@@ -1,5 +1,5 @@
 {block content}
 <div class="box loginbox">
-  <h1>Welcome {$user->getIdentity()->username}</h1>
+  <h1>Welcome {if $user->getIdentity()->role != 'guest'}{$user->getIdentity()->username}{/if}</h1>
 </div>
 {/block content}
