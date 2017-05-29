@@ -17,7 +17,7 @@
 <body>
   <div class="nav">
     <ul>
-      <li><a n:href="Homepage:">Homepage</a></li>
+      <!--<li><a n:href="Homepage:">Homepage</a></li>-->
       {if $user->loggedIn}
         <li class="rightside"><a n:href="Sign:out">Sign out</a></li>
         <li class="rightside"><a id="inactive">Welcome {$user->getIdentity()->username}
