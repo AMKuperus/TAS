@@ -75,7 +75,7 @@ If you still can't make it work try to read more about installing Nette on the [
 
 
 ## About
-TAS is developed by [AMKuperus](https://github.com/AMKuperus) and [Guido Leijten](https://github.com/guidoleijten) as a project for [ITVitae](http://itvitae.nl/).
+TAS is developed by [AMKuperus](https://github.com/AMKuperus) and [Guido Leijten](https://github.com/glleijten) as a project for [ITVitae](http://itvitae.nl/).
 
 ![picture alt](http://cdn.ikabus.com/3/3/media/original/logos/logo_itvitae_liggend_anders_denken.png)
 ----
